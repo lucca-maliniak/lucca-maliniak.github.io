@@ -12,12 +12,8 @@ async function colocarFilmes() {
     const moviesection = document.querySelector(".movies-grid")
     for (let i = 0; i < movies.length; i++) {
         const movie = document.createElement("div")
-        movie.innerHTML += `
-        <a href="" target="blank"><img
-                src="https://image.tmdb.org/t/p/w500/${movies[i].poster_path}"
-                alt="" id="m1"></a>
-        `
-        movie.innerHTML += `<a href="https://www.themoviedb.org/movie/${movies[i].id}?language=pt-BR" target = "blank" id= "vermais">Ver Mais</a>`
+        movie.innerHTML += `<a href="" target="_blank"><img src="https://image.tmdb.org/t/p/w500/${movies[i].poster_path}" alt="" id="m1"></a>`
+        movie.innerHTML += `<a href="https://www.themoviedb.org/movie/${movies[i].id}?language=pt-BR" target = "_blank" id= "vermais">Ver Mais</a>`
         moviesection.appendChild(movie)
     }
     console.log(movies)
