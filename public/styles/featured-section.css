@@ -72,6 +72,11 @@
     object-fit: cover;
 }
 
+#vermais{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
 .featured-section .footer-section,
 .review-section .footer-section,
 .interviews-section .footer-section{
