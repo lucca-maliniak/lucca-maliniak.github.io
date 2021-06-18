@@ -3,6 +3,7 @@ async function getPopularMovies() {
         .then(response => response.json())
         .then(data => data.results)
     const filteredMovies = Array.from(movies).slice(0, 4)
+    await console.log(movies)
     return filteredMovies
 }
 getPopularMovies()
