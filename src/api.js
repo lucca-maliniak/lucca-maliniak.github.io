@@ -1,4 +1,4 @@
-async function getPopularMovies() {
+function getPopularMovies() {
     const movies = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=00082de54a25f6dfc89059b86f15ffb4&language=pt-BR&page=1")
         .then(response => response.json())
         .then(data => data.results)
@@ -8,7 +8,7 @@ async function getPopularMovies() {
 }
 getPopularMovies()
 
-async function colocarFilmes() {
+function colocarFilmes() {
     const movies = await getPopularMovies()
     const moviesection = document.querySelector(".movies-grid")
     for (let i = 0; i < movies.length; i++) {
